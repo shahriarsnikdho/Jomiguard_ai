@@ -1,0 +1,6 @@
+{
+  "name": "JomiGuard AI",
+  "description": "AI-powered land document analysis and discrepancy screening platform for Bangladesh deeds and khatians.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-forest: #176B45;
+    --brand-gold: #D6A84F;
+    --brand-charcoal: #24312B;
+    --brand-light: #F8FAFC;
+    --brand-surface: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, -apple-system, sans-serif;
+    color: #24312B;
+    background-color: #F8FAFC;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom tabular and mono helpers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Print Stylesheet for Report Export */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  .no-print,
+  nav,
+  aside,
+  header button,
+  .print-hide {
+    display: none !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+  }
+}
